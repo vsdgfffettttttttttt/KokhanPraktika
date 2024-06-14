@@ -1,0 +1,1 @@
+INSERT INTO `praktika_392_kokhan`.`category` (`description`, `image`, `name`) VALUES ('wwq eew qwe', '/static/js/css/images/s1.png', 'Bristalback');

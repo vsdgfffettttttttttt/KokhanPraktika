@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <link rel="stylesheet" type="text/css" href="Cart.css" />
+</head>
+<body>
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-cart-container">
+        <div class="profile-button">
+            <a href="Profile.html">Профіль/Вхід</a>
+        </div>
+        <div class="cart-button">
+            <a href="Cart.html" class="cart-icon">&#128722;</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="cart-container">
+        <h1>Кошик</h1>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="total-price-container">
+            <p>Загальна сума: <span id="totalPrice"></span></p>
+        </div>
+        <div class="button-container">
+            <button id="clearCartBtn" class="btn">Очистити кошик</button>
+            <button id="goToProductListBtn" class="btn">Переглянути каталог</button>
+            <button id="checkoutBtn" class="btn">Оформити замовлення</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua. Усі права захищено.</p>
+</footer>
+
+<!-- Модальне вікно для оформлення замовлення -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оформлення замовлення</h2>
+        <form id="checkoutForm">
+            <label for="fullName">ПІБ:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            <label for="address">Адреса:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            <label for="phoneNumber">Телефон:</label><br>
+            <input type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+            <button type="submit" id="submitOrderBtn" class="btn">Надіслати замовлення</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список продуктів</title>
+    <link rel="stylesheet" type="text/css" href="ProductList.css" />
+</head>
+<body>
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-button">
+        <a href="Profile.html">Профіль/Вхід</a>
+    </div>
+    <div class="cart-button">
+        <a href="Cart.html" class="cart-icon">&#128722;</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="product-container">
+        <h1>Список продуктів</h1>
+        <div class="sort-container">
+            <label for="sortProducts">Сортування: </label>
+            <select id="sortProducts">
+                <option value="all">Усі товари</option>
+                <option value="TSHIRT">Одяг</option>
+                <option value="DISHES">Посуд</option>
+                <option value="PILLOW">Аксесуари</option>
+            </select>
+            <button id="applyFilterBtn">Застосувати фільтр</button>
+        </div>
+
+        <div id="productList" class="product-list"></div>
+        <button id="goToCartBtn" class="btn">Перейти до кошика</button>
+        <button id="goToAddProductBtn" style="display: none;" class="btn">Додати продукт</button>
+        <button id="goToEditProductBtn" style="display: none;" class="btn">Редагувати продукт</button>
+    </div>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua. Усі права захищено.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="ProductList.js"></script>
+</body>
+</html>

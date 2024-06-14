@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адміністрування Товарів</title>
+    <link rel="stylesheet" type="text/css" href="ProductAdmin.css" />
+</head>
+<body>
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-button">
+        <a href="Profile.html">Профіль/Вхід</a>
+    </div>
+    <div class="cart-button">
+        <a href="Cart.html" class="cart-icon">&#128722;</a>
+    </div>
+</div>
+<div class="container">
+    <div class="admin-products">
+        <h1>Адміністрування Товарів</h1>
+        <div id="productList" class="product-list"></div>
+        <button id="ProductListBtn">Список Товарів</button>
+    </div>
+</div>
+
+<!-- Модальне вікно для підтвердження видалення товару -->
+<div id="confirmDeleteModal">
+    <p>Ви дійсно хочете видалити цей товар?</p>
+    <button id="confirmDeleteBtn">Ок</button>
+    <button id="cancelDeleteBtn">Скасувати</button>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua. Усі права захищено.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="ProductAdmin.js"></script>
+</body>
+</html>

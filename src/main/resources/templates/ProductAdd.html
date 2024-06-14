@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати товар</title>
+    <link rel="stylesheet" type="text/css" href="ProductAdd.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-button">
+        <a href="Profile.html">Профіль/Вхід</a>
+    </div>
+    <div class="cart-button">
+        <a href="Cart.html" class="cart-icon">&#128722;</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="add-product-form">
+        <h1>Додати товар</h1>
+        <form id="addProductForm">
+            <label for="type">Тип:</label>
+            <select id="type" name="type">
+                <option value="TSHIRT">Одяг</option>
+                <option value="DISHES">Посуд</option>
+                <option value="PILLOW">Аксесуари</option>
+            </select>
+            <label for="photo">Фото:</label>
+            <input type="text" id="photo" name="photo">
+            <label for="name">Назва:</label>
+            <input type="text" id="name" name="name">
+            <label for="description">Опис:</label>
+            <textarea id="description" name="description"></textarea>
+            <label for="price">Ціна:</label>
+            <input type="number" id="price" name="price">
+            <label for="quantity">Кількість:</label>
+            <input type="number" id="quantity" name="quantity">
+            <button type="button" onclick="addProduct()">Додати товар</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua. Усі права захищено.</p>
+</footer>
+
+<script src="ProductAdd.js"></script>
+</body>
+</html>

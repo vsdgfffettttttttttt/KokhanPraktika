@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адміністрування замовлень</title>
+    <link rel="stylesheet" type="text/css" href="AdminOrders.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="AdminOrders.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="Contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-button">
+        <a href="Profile.html">Профіль/Вхід</a>
+    </div>
+    <div class="cart-button">
+        <a href="Cart.html" class="cart-icon">&#128722;</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="orders-container">
+        <h1>Адміністрування замовлень</h1>
+        <div class="search-section">
+            <div class="search-box">
+                <label for="searchUserId">Пошук за ID користувача:</label>
+                <input type="text" id="searchUserId">
+                <button id="searchUserBtn" class="btn">Пошук</button>
+            </div>
+            <div class="search-box">
+                <label for="searchOrderId">Пошук за ID замовлення:</label>
+                <input type="text" id="searchOrderId">
+                <button id="searchOrderBtn" class="btn">Пошук</button>
+            </div>
+        </div>
+        <button id="showAllOrdersBtn" class="btn">Показати всі замовлення</button>
+        <div id="ordersList"></div>
+    </div>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; RekrutStore.ua. Усі права захищено.</p>
+</footer>
+
+<!-- Модальне вікно для зміни статусу замовлення -->
+<div id="statusModal" class="modal">
+    <div id="statusModalContent" class="modal-content">
+        <h2>Зміна статусу замовлення</h2>
+        <button class="status-btn" data-status="PAID">Оплачено</button>
+        <button class="status-btn" data-status="SHIPPED">Відправлено</button>
+        <button class="status-btn" data-status="DELIVERED">Доставлено</button>
+        <button class="status-btn" data-status="COMPLETED">Завершено</button>
+        <button id="closeModal" class="btn">Закрити</button>
+    </div>
+</div>
+
+</body>
+</html>

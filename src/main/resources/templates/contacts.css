@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/js/css/images/333.jpg');
+    background-size: cover;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+section {
+    padding: 5em 1em 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    position: relative;
+}
+
+
+h2 {
+    color: #55cc55;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #55cc55;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 0.5em;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #55cc55;
+}
+
+.profile-button {
+    background-color: #55cc55; /* Зелёный цвет */
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-left: 1375px; /* Уменьшено с 1400px */
+}
+
+.profile-button:hover {
+    background-color: #00aa00; /* Тёмный зелёный */
+}
+
+.profile-button a {
+    color: #fff;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.profile-button a:hover {
+    color: #02ec02; /* Более яркий зелёный */
+}
+
+.cart-icon {
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #55cc55; /* Зелёный цвет */
+}
+
+.cart-icon:hover {
+    color: #00aa00; /* Тёмный зелёный */
+}
+
+.cart-button {
+    background-color: #55cc55; /* Зелёный цвет */
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-button:hover {
+    background-color: #00aa00; /* Тёмный зелёный */
+}
+
+.cart-icon {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    min-height: 85vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+footer {
+    background-color: #333;
+    color: #aaa;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #444;
+    z-index: 1000;
+}

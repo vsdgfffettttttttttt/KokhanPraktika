@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и авторизация</title>
+    <link rel="stylesheet" type="text/css" href="Accounts.css" />
+</head>
+<body>
+
+<div class="navbar">
+    <div>
+        <a href="Home.html">Главная</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div>
+        <div class="cart-button">
+            <a href="Cart.html" class="cart-icon">&#128722;Корзина</a>
+        </div>
+    </div>
+</div>
+
+<section class="auth-container">
+    <div id="registration" class="auth-form">
+        <h2>Регистрация</h2>
+        <form id="registrationForm" onsubmit="register(event)">
+            <label for="reg-username">Имя пользователя:</label>
+            <input type="text" id="reg-username" name="username" required><br><br>
+
+            <label for="reg-password">Пароль:</label>
+            <input type="password" id="reg-password" name="password" required><br><br>
+
+            <button type="submit">Зарегистрироваться</button>
+            <div id="registrationMessage"></div>
+        </form>
+    </div>
+
+    <div id="login" class="auth-form">
+        <h2>Авторизация</h2>
+        <form id="loginForm" onsubmit="login(event)">
+            <label for="login-username">Имя пользователя:</label>
+            <input type="text" id="login-username" name="username" required><br><br>
+
+            <label for="login-password">Пароль:</label>
+            <input type="password" id="login-password" name="password" required><br><br>
+
+            <button type="submit">Войти</button>
+            <div id="loginMessage"></div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua Все права защищены.</p>
+</footer>
+
+<script src="Account.js"></script>
+
+</body>
+</html>

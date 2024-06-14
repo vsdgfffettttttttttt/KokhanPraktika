@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль користувача</title>
+    <link rel="stylesheet" type="text/css" href="Accounts.css" />
+</head>
+<body>
+<div class="navbar">
+    <div>
+        <a href="Home.html">Головна</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="ProductList.html">Каталог</a>
+    </div>
+    <div class="profile-button">
+        <a href="Profile.html">Профіль/Вхід</a>
+    </div>
+    <div class="cart-button">
+        <a href="Cart.html" class="cart-icon">&#128722;</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="profile-container">
+        <h1>Профіль користувача</h1>
+        <div id="profileData">
+            <!-- Тут будуть відображені дані профілю -->
+            <p>Ім'я: <span id="profileName"></span></p>
+            <p>Email: <span id="profileEmail"></span></p>
+        </div>
+
+        <div class="profile-actions">
+            <h2>Дії профілю</h2>
+            <button id="adminPageBtn" style="display: none;">Сторінка адміністратора</button>
+            <button id="myOrdersBtn">Мої замовлення</button>
+            <button id="changePasswordBtn">Змінити пароль</button>
+            <button id="logoutBtn">Вийти</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-panel">
+    <p>&copy; 2024 RekrutStore.ua. Усі права захищено.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="Profile.js"></script>
+</body>
+</html>
